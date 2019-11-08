@@ -8,6 +8,6 @@ var initialState = {
   currentVideo: null,
   videoList: exampleVideoData
 };
-var store = createStore(rootReducer, initialState, applyMiddleware(thunk), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+var store = createStore(rootReducer, initialState, applyMiddleware(thunk));
 
 export default store;
